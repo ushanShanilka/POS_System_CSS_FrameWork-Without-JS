@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body>
+<script src="assests/js/bootstrap.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand font fw-bold fs-3 text-danger" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold">
+                <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" href="Customer.html ">Customer</a>
+                <a class="nav-link" href="Item.html">Item</a>
+                <a class="nav-link" href="Order.html">Order</a>
+            </div>
+        </div>
+    </div>
+    <span class="btn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+New Customer</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center" id="exampleModalLabel">New Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="form-floating p-2">
+                                <input type="customer id" class="form-control" id="customerID" placeholder="id@example.com">
+                                <label for="customerID">Customer Id</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer name" class="form-control" id="customerName" placeholder="name@example.com">
+                                <label for="customerName">Customer Name</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer address" class="form-control" id="customerAddress" placeholder="address@example.com">
+                                <label for="customerAddress">Customer Address</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer salary" class="form-control" id="customerSalary" placeholder="Salary@example.com">
+                                <label for="customerSalary">Customer Salary</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Customer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </span>
+    <span class="btn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">+New Item</button>
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center" id="exampleModalLabel1">New Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="form-floating p-2">
+                                <input type="item code" class="form-control" id="itemCode" placeholder="code@example.com">
+                                <label for="itemCode">Item Code</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="item name" class="form-control" id="itemName" placeholder="name@example.com">
+                                <label for="itemName">Item Name</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="qty" class="form-control" id="qty" placeholder="qty@example.com">
+                                <label for="qty">QTY</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="unit price" class="form-control" id="unitPrice" placeholder="UnitPrice@example.com">
+                                <label for="unitPrice">Unit Price</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </span>
+</nav>
+
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="assests/img/depositphotos_158349196-stock-photo-point-of-sale-system-for.jpg" height="603px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assests/img/w4NWFe.jpg" height="603px" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+            <img src="assests/img/notebook-1280538_1920.jpg" height="603px" class="d-block w-100" alt="...">
+        </div>
+        <a style="position: absolute;left: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto" class="nav-link" href="Customer.html">
+            <button class="btn btn-success" type="button"  style="position: absolute;right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;width: 200px;height: 80px;z-index: 1" > Get Stared</button>
+            <div style="width: 200px;
+            height: 80px;
+            border: 3px solid #146c43;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            animation-name: chanagesize;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            z-index: 0;
+"></div>
+        </a>
+    </div>
+    <button style="opacity: 0" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button style="opacity: 0" class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"  data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span  class="visually-hidden">Next</span>
+    </button>
+</div>
+
+</body>
+</html>

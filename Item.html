@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Item_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body>
+<script src="assests/js/bootstrap.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light  mb-3">
+    <img class="mx-2" src="assests/icon/icons8_shop_52px_9.png " alt="" width="40" height="34">
+    <div class="container-fluid">
+        <a class="navbar-brand font fw-bold fs-3 text-danger" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold">
+                <a class="nav-link " aria-current="page" href="index.html ">Home</a>
+                <a class="nav-link " href="Customer.html ">Customer</a>
+                <a class="nav-link active " href="Item.html ">Item</a>
+                <a class="nav-link" href="Order.html">Order</a>
+            </div>
+        </div>
+    </div>
+    <span class="btn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+New Item</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center" id="exampleModalLabel">New Item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="form-floating p-2">
+                                <input type="item code" class="form-control" id="itemCode" placeholder="code@example.com">
+                                <label for="itemCode">Item Code</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="item name" class="form-control" id="itemName" placeholder="name@example.com">
+                                <label for="itemName">Item Name</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="qty" class="form-control" id="qty" placeholder="qty@example.com">
+                                <label for="qty">QTY</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="unit price" class="form-control" id="unitPrice" placeholder="UnitPrice@example.com">
+                                <label for="unitPrice">Unit Price</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Item</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </span>
+</nav>
+
+<section class="container-fluid">
+    <section class="row px-2 ">
+        <div class=" col">
+            <div class="form-floating p-2">
+                <input type="Item Code" class="form-control" id="txtitemCode" placeholder="code@example.com">
+                <label for="txtitemCode">Item Code</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="item name" class="form-control" id="txtitemName" placeholder="name@example.com">
+                <label for="txtitemName">Item Name</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="Qty" class="form-control" id="txtQty" placeholder="qty@example.com">
+                <label for="txtQty">Qty</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="unit price" class="form-control" id="txtunitPrice" placeholder="unitprice@example.com">
+                <label for="txtunitPrice">Unit Price</label>
+            </div>
+        </div>
+    </section>
+
+    <section class="col p-2">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-warning me-md-2 p-2" type="button">Search</button>
+            <button class="btn btn-info" type="button">Update</button>
+            <button type="button" class="btn btn-danger" type="button">Delete</button>
+        </div>
+    </section>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="bg-primary text-white">
+        <th>Item Code</th>
+        <th>Item Name</th>
+        <th>Qty</th>
+        <th>Unit Price</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>I001</td>
+            <td>Oill</td>
+            <td>20</td>
+            <td>Rs.500</td>
+        </tr>
+
+        <tr>
+            <td>I002</td>
+            <td>Tire</td>
+            <td>05</td>
+            <td>Rs.15000</td>
+        </tr>
+
+        <tr>
+            <td>I003</td>
+            <td>Break Cable</td>
+            <td>50</td>
+            <td>Rs.800</td>
+        </tr>
+
+        </tbody>
+    </table>
+
+</section>
+
+</body>
+</html>

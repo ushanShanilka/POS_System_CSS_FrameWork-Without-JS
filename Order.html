@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order_Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body>
+<script src="assests/js/bootstrap.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light ">
+    <img class="mx-2" src="assests/icon/icons8_shop_52px_9.png " alt="" width="40" height="34">
+    <div class="container-fluid">
+        <a class="navbar-brand font fw-bold fs-3 text-danger" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold">
+                <a class="nav-link " aria-current="page" href="index.html ">Home</a>
+                <a class="nav-link " href="Customer.html ">Customer</a>
+                <a class="nav-link " href="Item.html ">Item</a>
+                <a class="nav-link active " href="Order.html ">Order</a>
+            </div>
+        </div>
+    </div>
+    <span class="btn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">+ New Order</button>
+      </span>
+</nav>
+
+<form class="row mx-4 mb-5">
+    <div class="col-auto g-3">
+        <label for="inputOrderId" class="visually-hidden">Order Id</label>
+        <input type="orderId" class="form-control" id="inputOrderId" placeholder="Order Id">
+    </div>
+</form >
+
+<form class="row mx-3">
+
+    <section class="row mb-5">
+        <section class="col-3">
+            <select class="form-select" aria-label="Default select customer">
+                <option selected>Select Customer</option>
+                <option value="1">C001</option>
+                <option value="2">C002</option>
+                <option value="3">C003</option>
+            </select>
+        </section>
+        <div class="col-auto ">
+            <label for="inputCustomerName" class="visually-hidden">Customer Name</label>
+            <input type="customer Name" class="form-control" id="inputCustomerName" placeholder="Customer Name">
+        </div>
+    </section>
+
+    <section class="row">
+        <section class="col-3 ">
+            <select class="form-select " aria-label="Default select item">
+                <option selected>Select Item</option>
+                <option value="1">I001</option>
+                <option value="2">I002</option>
+                <option value="3">I003</option>
+            </select>
+        </section>
+        <div class="col-auto">
+            <label for="inputItemName" class="visually-hidden">Item Name</label>
+            <input type="Item Name" class="form-control" id="inputItemName" placeholder="Item Name">
+        </div>
+
+        <div class="col-auto">
+            <label for="inputItemUnitPrice" class="visually-hidden">Unit Price</label>
+            <input type="Unit Price" class="form-control" id="inputItemUnitPrice" placeholder="Unit Price">
+        </div>
+        <section class="col-1 ">
+            <div class="col-auto ">
+                <label for="inputQty" class="visually-hidden">Item Name</label>
+                <input type="Qty" class="form-control btn-outline-danger" id="inputQty" placeholder="QTY">
+            </div>
+        </section>
+    </section>
+
+</form>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end mt-3 mb-2 mx-3">
+    <button class="btn btn-warning me-md-2" type="button">Add</button>
+    <button class="btn btn-info" type="button">Remove</button>
+</div>
+
+<table class="table table-bordered table-hover shadow-sm ">
+    <thead class="bg-primary text-white">
+    <th>Order ID</th>
+    <th>Customer ID</th>
+    <th>Customer Name</th>
+    <th>Item Code</th>
+    <th>Item Name</th>
+    <th>Unit Price</th>
+    <th>qty</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>O001</td>
+        <td>C001</td>
+        <td>Kamal</td>
+        <td>I001</td>
+        <td>Oill</td>
+        <td>Rs.500.00</td>
+        <td>02</td>
+    </tr>
+    <tr>
+        <td>O002</td>
+        <td>C002</td>
+        <td>Nimal</td>
+        <td>I002</td>
+        <td>Tire</td>
+        <td>Rs.15000.00</td>
+        <td>01</td>
+    </tr>
+    <tr>
+        <td>O003</td>
+        <td>C003</td>
+        <td>Sunil</td>
+        <td>I003</td>
+        <td>Break Cable</td>
+        <td>Rs.800.00</td>
+        <td>01</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<div class="badge bg-primary text-wrap p-3" style="width: 8rem;">
+    Total :
+</div>
+
+<div class="d-grid gap-2 d-md-flex justify-content-md-end mb-2 mx-2">
+    <button class="btn btn-success me-md-2 p-3" type="button">Place Order</button>
+</div>
+
+</body>
+</html>
+
+

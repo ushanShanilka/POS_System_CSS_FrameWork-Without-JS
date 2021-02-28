@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assests/css/bootstrap.min.css">
+</head>
+<body>
+<script src="assests/js/bootstrap.js"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-3">
+    <img class="mx-2" src="assests/icon/icons8_shop_52px_9.png  " alt="" width="40" height="34">
+    <div class="container-fluid">
+        <a class="navbar-brand font fw-bold fs-3 text-danger" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav fw-bold">
+                <a class="nav-link " aria-current="page" href="index.html ">Home</a>
+                <a class="nav-link active " href="Customer.html ">Customer</a>
+                <a class="nav-link " href="Item.html">Item</a>
+                <a class="nav-link" href="Order.html">Order</a>
+            </div>
+        </div>
+    </div>
+    <span class="btn">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">+New Customer</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="text-center" id="exampleModalLabel">New Customer</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="form-floating p-2">
+                                <input type="customer id" class="form-control" id="customerIDn" placeholder="id@example.com">
+                                <label for="customerID">Customer Id</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer name" class="form-control" id="customerNamen" placeholder="name@example.com">
+                                <label for="customerName">Customer Name</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer address" class="form-control" id="customerAddressn" placeholder="address@example.com">
+                                <label for="customerAddress">Customer Address</label>
+                            </div>
+                            <div class="form-floating p-2">
+                                <input type="customer salary" class="form-control" id="customerSalaryn" placeholder="Salary@example.com">
+                                <label for="customerSalaryn">Customer Salary</label>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save Customer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </span>
+</nav>
+
+
+
+<section class="container-fluid">
+    <section class="row px-2 ">
+        <div class=" col">
+            <div class="form-floating p-2">
+                <input type="customer id" class="form-control" id="customerID" placeholder="id@example.com">
+                <label for="customerID">Customer Id</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="customer name" class="form-control" id="customerName" placeholder="name@example.com">
+                <label for="customerName">Customer Name</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="customer address" class="form-control" id="customerAddress" placeholder="address@example.com">
+                <label for="customerAddress">Customer Address</label>
+            </div>
+            <div class="form-floating p-2">
+                <input type="customer salary" class="form-control" id="customerSalary" placeholder="salary@example.com">
+                <label for="customerSalary">Customer Salary</label>
+            </div>
+        </div>
+    </section>
+
+    <section class="col p-2">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-warning me-md-2 p-2" type="button">Search</button>
+            <button class="btn btn-info" type="button">Update</button>
+            <button type="button" class="btn btn-danger" type="button">Delete</button>
+        </div>
+    </section>
+
+    <table class="table table-bordered table-hover shadow-sm">
+        <thead class="bg-primary text-white">
+        <th>Customer ID</th>
+        <th>Customer Name</th>
+        <th>Customer Address</th>
+        <th>Customer Salary</th>
+        </thead>
+        <tbody>
+        <tr>
+            <td>C001</td>
+            <td>Kamal</td>
+            <td>Matara</td>
+            <td>100000</td>
+        </tr>
+        <tr>
+            <td>C002</td>
+            <td>Nimal</td>
+            <td>Galle</td>
+            <td>50000</td>
+        </tr>
+        <tr>
+            <td>C003</td>
+            <td>Sunil</td>
+            <td>Colombo</td>
+            <td>75000</td>
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+
+<!---->
+
+</body>
+</html>
